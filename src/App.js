@@ -10,7 +10,7 @@ const App = () => {
 
   // if using a class, equivalent of componentDidMount
   useEffect(() => {
-    const Core = window.Core;
+    let Core = window.Core;
     Core.setWorkerPath("/webviewer");
 
     let documentViewer = new Core.DocumentViewer();
@@ -28,6 +28,7 @@ const App = () => {
         setIsVisible(false);
         timeoutRef.current = null;
         documentViewer = null;
+        Core = null;
       }, 10000);
     });
   }, []);
