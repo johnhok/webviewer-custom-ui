@@ -7,8 +7,10 @@ const Internal = () => {
 
   // if using a class, equivalent of componentDidMount
   useEffect(() => {
-    const Core = window.Core;
+    let Core = window.Core;
     Core.setWorkerPath("/webviewer");
+    Core.disableEmbeddedJavaScript();
+    Core.setCustomFontURL("");
 
     let documentViewer = new Core.DocumentViewer();
     documentViewer.setScrollViewElement(scrollView.current);
@@ -18,11 +20,14 @@ const Internal = () => {
     return () => {
       documentViewer.closeDocument();
       documentViewer.dispose();
+      documentViewer.unmount();
 
       scrollView.current = null;
       viewer.current = null;
 
       documentViewer = null;
+
+      Core = null;
     };
   }, []);
 
