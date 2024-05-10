@@ -20,7 +20,9 @@ const Internal = () => {
     return () => {
       documentViewer.closeDocument();
       documentViewer.dispose();
-      documentViewer.unmount();
+      if (documentViewer.getDocument()) {
+        documentViewer.unmount();
+      }
 
       scrollView.current = null;
       viewer.current = null;

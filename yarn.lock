@@ -1574,10 +1574,10 @@
   resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@pdftron/webviewer@10.8.0":
-  version "10.8.0"
-  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@pdftron/webviewer/-/webviewer-10.8.0.tgz#d19d698cb80d011acb4a9a844141bf37d186ac1f"
-  integrity sha512-/VPHEDTrqVEbjLTu5YIDExARXqrG6JUKtguOjvF+hlH21V465FIVw/BfZw+A0rpxSZFoTYf0Wtly5u8ZFXofng==
+"@pdftron/webviewer@10.9.0":
+  version "10.9.0"
+  resolved "https://csdisco.jfrog.io/csdisco/api/npm/npm/@pdftron/webviewer/-/webviewer-10.9.0.tgz#c39105189c70cfaa0601dae02e688bb510f74e3b"
+  integrity sha512-na6dQE1aFVc42zeRYjk0UDWKqdsI1PcQeQdAcwpNCKyND9W3s8iG8GLkZzfvP2CZjGhj47l28LkZ0NUBrq3weQ==
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
