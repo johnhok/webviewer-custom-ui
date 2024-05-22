@@ -15,6 +15,7 @@ const Internal = () => {
     let documentViewer = new Core.DocumentViewer();
     documentViewer.setScrollViewElement(scrollView.current);
     documentViewer.setViewerElement(viewer.current);
+    documentViewer.getDisplayModeManager().disableVirtualDisplayMode();
     documentViewer.loadDocument("/files/demo.pdf");
 
     return () => {
